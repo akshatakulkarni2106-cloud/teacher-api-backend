@@ -1,0 +1,35 @@
+### Test Register
+POST http://localhost:8080/api/register
+Content-Type: application/json
+
+{
+    "email": "test@gmail.com",
+    "first_name": "John",
+    "last_name": "Doe",
+    "password": "123456"
+}
+
+### Test Login
+POST http://localhost:8080/api/login
+Content-Type: application/json
+
+{
+    "email": "test@gmail.com",
+    "password": "123456"
+}
+
+### Create Teacher
+POST http://localhost:8080/api/teacher
+Content-Type: application/json
+Authorization: Bearer aada9a673af76155d856ebe800f1099f604e6d2bc566bce2131006845a570918
+
+{
+    "university_name": "Mumbai University",
+    "gender": "Male",
+    "year_joined": "2020",
+    "subject": "Computer Science"
+}
+
+### Get All Teachers
+GET http://localhost:8080/api/teachers
+Authorization: Bearer aada9a673af76155d856ebe800f1099f604e6d2bc566bce2131006845a570918
